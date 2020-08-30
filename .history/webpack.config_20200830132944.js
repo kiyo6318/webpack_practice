@@ -23,15 +23,6 @@ module.exports = {
       },
       {
         test: /\.jpg/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              esModule: false,
-              name: "images/[name].[ext]",
-            },
-          },
-        ],
       },
     ],
   },
