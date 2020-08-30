@@ -41,9 +41,6 @@ module.exports = {
           },
           {
             loader: "pug-html-loader",
-            options: {
-              pretty: true,
-            },
           },
         ],
       },
@@ -53,14 +50,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/main.css",
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/templetes/index.pug",
-      filename: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/templetes/access.pug",
-      filename: "access.html",
-    }),
+    new HtmlWebpackPlugin({ template: "./src/templetes/index.html" }),
     new CleanWebpackPlugin(),
   ],
 };

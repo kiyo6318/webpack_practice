@@ -57,10 +57,7 @@ module.exports = {
       template: "./src/templetes/index.pug",
       filename: "index.html",
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/templetes/access.pug",
-      filename: "access.html",
-    }),
+    new HtmlWebpackPlugin({ template: "./src/templetes/index.pug" }),
     new CleanWebpackPlugin(),
   ],
 };
